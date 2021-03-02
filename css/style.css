@@ -380,10 +380,97 @@
   .popupComponent__close:hover {
     color: #f79554; }
 
+#popupComponent2 {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .8; }
+  #popupComponent2:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupComponent2__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow-y: auto; }
+    @media (max-width: 767.98px) {
+      #popupComponent2__content {
+        transform: translate(0%, 0%);
+        width: 90%;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        margin: 24px; } }
+    #popupComponent2__content--title {
+      margin-bottom: 18px; }
+      @media (max-width: 767.98px) {
+        #popupComponent2__content--title {
+          margin-top: 50px; } }
+    #popupComponent2__content--container {
+      border: 1px solid black;
+      height: 600px; }
+      @media (max-width: 767.98px) {
+        #popupComponent2__content--container {
+          height: 100%; } }
+    #popupComponent2__content--column {
+      border-right: 1px solid black;
+      height: 598px; }
+      @media (max-width: 767.98px) {
+        #popupComponent2__content--column {
+          margin-bottom: 24px;
+          height: 100%;
+          border-right: none; } }
+    #popupComponent2__content--column2 {
+      border-right: 1px solid black;
+      background-color: #d8d8d8;
+      font-weight: 800;
+      height: 598px; }
+      #popupComponent2__content--column2last {
+        border: none; }
+      @media (max-width: 767.98px) {
+        #popupComponent2__content--column2 {
+          height: 100%;
+          margin-bottom: 24px;
+          border-right: none; } }
+    #popupComponent2__content--bullet {
+      margin-bottom: 18px;
+      font-size: 14px;
+      text-align: left;
+      list-style: none; }
+      #popupComponent2__content--bullet:before {
+        content: "\2022";
+        color: #f79554;
+        font-weight: 600;
+        display: inline-block;
+        width: 1em;
+        margin-left: 5px; }
+  #popupComponent2__close:link, #popupComponent2__close:visited {
+    color: black;
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    font-size: 32px;
+    text-decoration: none;
+    display: inline-block; }
+  #popupComponent2__close:hover {
+    color: #f79554; }
+
 #centeralign3 {
-  margin: 70px auto;
+  margin: 25px auto;
   text-align: center;
-  width: 80%; }
+  width: 90%; }
 
 #titleBig {
   font-size: 35px;
